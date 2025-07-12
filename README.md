@@ -54,13 +54,11 @@ A modern web-based platform that enables users to exchange unused clothing throu
 
 ## 🚀 Technology Stack
 
-- **Frontend**: React 18 with Vite
-- **Styling**: Tailwind CSS with custom design system
-- **Icons**: Lucide React
-- **Routing**: React Router DOM
-- **Forms**: React Hook Form
-- **File Upload**: React Dropzone
-- **State Management**: React Context API
+- **Frontend**: Vanilla JavaScript, HTML5, CSS3
+- **Styling**: Custom CSS with modern design system
+- **Icons**: Font Awesome
+- **Server**: HTTP Server for development
+- **No Build Process**: Pure vanilla implementation
 
 ## 📦 Installation
 
@@ -86,20 +84,19 @@ A modern web-based platform that enables users to exchange unused clothing throu
 ## 🔧 Available Scripts
 
 - `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
+- `npm run build` - No build step needed for vanilla JS
+- `npm run preview` - Preview the application
 
 ## 🎨 Design System
 
-The application uses a custom design system built with Tailwind CSS:
+The application uses a custom design system built with modern CSS:
 
 ### Colors
-- **Primary**: Blue gradient (#0ea5e9 to #0369a1)
-- **Secondary**: Purple gradient (#d946ef to #a21caf)
-- **Success**: Green (#10b981)
+- **Primary**: Blue gradient (#0284c7 to #0369a1)
+- **Secondary**: Purple gradient (#c026d3 to #a21caf)
+- **Success**: Green (#16a34a)
 - **Warning**: Yellow (#f59e0b)
-- **Error**: Red (#ef4444)
+- **Error**: Red (#dc2626)
 
 ### Components
 - **Buttons**: Primary, secondary, and danger variants
@@ -143,7 +140,7 @@ The application is fully responsive and optimized for:
 - User communication for swap coordination
 
 ### Image Management
-- Drag-and-drop upload interface
+- File upload interface
 - Multiple image support (up to 5 per item)
 - Image preview and removal
 - Automatic main image designation
@@ -158,17 +155,18 @@ The application is fully responsive and optimized for:
 
 ### File Structure
 ```
-src/
-├── components/     # Reusable UI components
-├── contexts/       # React contexts (Auth)
-├── pages/          # Page components
-├── utils/          # Utility functions
-├── assets/         # Static assets
-└── index.css       # Global styles
+ReWear/
+├── index.html          # Main HTML file
+├── styles/
+│   └── main.css        # All styles
+├── js/
+│   └── app.js          # All JavaScript functionality
+├── package.json        # Project configuration
+└── README.md           # Documentation
 ```
 
 ### State Management
-- Authentication state managed via React Context
+- Authentication state managed via localStorage
 - Local component state for forms and UI interactions
 - Mock data for demonstration purposes
 
@@ -176,18 +174,14 @@ src/
 - Lazy loading of images
 - Efficient filtering and sorting algorithms
 - Responsive image loading
-- Optimized bundle size with Vite
+- No build process overhead
 
 ## 🚀 Deployment
 
 The application can be deployed to any static hosting service:
 
-1. **Build the application**
-   ```bash
-   npm run build
-   ```
-
-2. **Deploy the `dist` folder** to your preferred hosting service:
+1. **No build step required** - Pure vanilla JavaScript
+2. **Deploy all files** to your preferred hosting service:
    - Vercel
    - Netlify
    - GitHub Pages
@@ -209,9 +203,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 🙏 Acknowledgments
 
 - Unsplash for high-quality stock images
-- Lucide for beautiful icons
-- Tailwind CSS for the utility-first CSS framework
-- React community for excellent documentation and tools
+- Font Awesome for beautiful icons
+- Modern CSS for the styling framework
+- Vanilla JavaScript community for excellent documentation
 
 ## 📞 Support
 
@@ -219,4 +213,4 @@ For support or questions, please open an issue in the repository or contact the 
 
 ---
 
-**ReWear** - Making sustainable fashion accessible to everyone! 🌱👕 
+**ReWear** - Making sustainable fashion accessible to everyone! 🌱👕
