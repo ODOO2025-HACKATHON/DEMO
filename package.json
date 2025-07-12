@@ -1,0 +1,14 @@
+{
+  "name": "rewear",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -o",
+    "build": "echo 'No build step needed for vanilla JS'",
+    "preview": "npx http-server . -p 3000"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+} 
